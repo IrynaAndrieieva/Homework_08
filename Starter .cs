@@ -40,7 +40,8 @@ namespace Homework_08
                     }
                     else
                     {
-                        act.Error();
+                        logger.Error("Action failed by reason:Wrong random number");
+                        Console.WriteLine("\nlogger.Error:Action failed by reason: Wrong random number");
                     }
                 }
             }
