@@ -10,7 +10,21 @@ namespace Homework_08
     {
         public void Run()
         {
+            Random rnd = new Random();
+            int value = rnd.Next(0, 100);
 
+            for (int i = 0; i <= 100; i++)
+            {
+
+                if (i == value)
+                {
+                    Console.WriteLine($"Номер числа: {value}");
+                    continue;
+                }
+            }
+
+            Console.ReadKey();
         }
     }
 }
+
