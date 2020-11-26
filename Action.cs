@@ -12,27 +12,35 @@ namespace Homework_08
         public static Logger logger = LogManager.GetCurrentClassLogger();
         public void Inform()
         {
-            logger.Info("Start method");
-            Console.WriteLine("Start method");
+            logger.Info("\nStart method");
+            Console.WriteLine("\nStart method");
         }
 
         public void Warning()
         {
-            logger.Warn("Skipped logic in method");
-            Console.WriteLine("Skipped logic in method");
+            logger.Warn("\nSkipped logic in method");
+            Console.WriteLine("\nSkipped logic in method");
         }
 
         public void Exception()
         {
             try
             {
-                throw new Exception("I broke a toilet");
+                throw new Exception("\nI broke a toilet");
             }
             catch (Exception ex)
             {
                 Console.Write(ex.StackTrace + "\n");
             }
         }
+
+        public void Error()
+        {
+            logger.Error("Action failed by reason:");
+            Console.WriteLine("SAction failed by reason:");
+        }
+
+        
 
     }
 }

@@ -16,25 +16,36 @@ namespace Homework_08
             Action act = new Action();
 
             Random rnd = new Random();
-            int value = rnd.Next(1,3);
+            int value = rnd.Next(0, 100);
 
-            for (int i = 0; i <= 100; i++)
+            for (int i = value; i < 100; i++)
+
             {
-              if (value == 1)
+
+                if (i % 2 == 0)
                 {
                     act.Inform();
                 }
+                else
+                {
+                    if (i % 3 == 0)
+                    {
+                        act.Warning();
+                    }
+                    else
 
-              if (value == 2)
-                {
-                    act.Warning();
-                }
-                
-              if (value == 3)
-                {
-                    act.Exception();
+                    if (i % 5 == 0)
+                    {
+                        act.Exception();
+                    }
+                    else
+                    {
+                        act.Error();
+                    }
                 }
             }
+
+           
 
 
         }
