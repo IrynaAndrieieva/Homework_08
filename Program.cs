@@ -10,6 +10,10 @@ namespace Homework_08
     {
         static void Main(string[] args)
         {
+            Starter start = new Starter();
+            start.Run();
+
+
         }
     }
 }
