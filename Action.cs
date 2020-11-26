@@ -13,13 +13,13 @@ namespace Homework_08
         public void Inform()
         {
             logger.Info("\nStart method");
-            Console.WriteLine("\nStart method");
+            Console.WriteLine("\nlogger.Info: Start method");
         }
 
         public void Warning()
         {
             logger.Warn("\nSkipped logic in method");
-            Console.WriteLine("\nSkipped logic in method");
+            Console.WriteLine("\nlogger.Warn: Skipped logic in method");
         }
 
         public void Exception()
@@ -30,14 +30,14 @@ namespace Homework_08
             }
             catch (Exception ex)
             {
-                Console.Write(ex.StackTrace + "\n");
+                Console.Write(ex.StackTrace + "\nI broke a toilet");
             }
         }
 
         public void Error()
         {
-            logger.Error("Action failed by reason:");
-            Console.WriteLine("SAction failed by reason:");
+            logger.Error("Action failed by reason");
+            Console.WriteLine("logger.Error: Saction failed by reason");
         }
 
         

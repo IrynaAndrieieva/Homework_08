@@ -18,23 +18,23 @@ namespace Homework_08
             Random rnd = new Random();
             int value = rnd.Next(0, 100);
 
-            for (int i = value; i < 100; i++)
+            for (int i = 0; i < 100; i++)
 
             {
 
-                if (i % 2 == 0)
+                if ((i + value) % 2 == 0)
                 {
                     act.Inform();
                 }
                 else
                 {
-                    if (i % 3 == 0)
+                    if ((i + value) % 3 == 0)
                     {
                         act.Warning();
                     }
                     else
 
-                    if (i % 5 == 0)
+                    if ((i + value) % 5 == 0)
                     {
                         act.Exception();
                     }

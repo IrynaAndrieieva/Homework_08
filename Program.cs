@@ -9,7 +9,6 @@ namespace Homework_08
 {
     class Program
     {
-        private static Logger logger = LogManager.GetCurrentClassLogger();
         static void Main(string[] args)
         {
             Starter start = new Starter();
