@@ -9,8 +9,9 @@ namespace Homework_08
 {
     class Action
     {
+        Starter start = new Starter();
 
-        private static Logger logger = LogManager.GetCurrentClassLogger();
+        public Logger logger = LogManager.GetCurrentClassLogger();
         public void Inform()
         {
             logger.Info("Start method");
@@ -21,17 +22,17 @@ namespace Homework_08
             logger.Warn("Skipped logic in method");
         }
 
-        //public void Exception()
-        //{
-        //    try
-        //    {
-        //        throw new Exception("I broke a toilet");
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        ex.StackTrace
-        //    }
-        //}
+        public void Exception()
+        {
+            try
+            {
+                throw new Exception("I broke a toilet");
+            }
+            catch (Exception ex)
+            {
+                Console.Write(ex.StackTrace + "\n\n");
+            }
+        }
 
     }
 }
