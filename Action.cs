@@ -33,13 +33,6 @@ namespace Homework_08
                 Console.Write(ex.StackTrace + "\nI broke a toilet");
             }
         }
-
-        public void Error()
-        {
-            logger.Error("Action failed by reason");
-            Console.WriteLine("logger.Error: Saction failed by reason");
-        }
-
         
 
     }
